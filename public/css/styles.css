@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@400;500;700&family=Piazzolla:wght@200;400;900&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&family=Ysabeau+SC:wght@400;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main_menu {
+    background-color: var(--main-bg);
+}
+
+.navbar {
+    color: #fff;
+    background-color: var(--main-bg);
+    padding-block: 2rem;
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+a.navbar-brand:focus{
+    color: #fff;
+}
+
+a.navbar-brand:hover {
+    color: var(--main-color);
+}
+
+button.navbar-toggler {
+    background-color: white;
+    border: none;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: var(--main-color);
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+.fa-snowflake {
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* main header */
+
+
+.main_header_left,
+.about-us-left {
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_left p {
+    font-size: 2rem;
+}
+
+.main_header_left h1 {
+    font-size: 4rem;
+    margin: 1rem 0 5rem 0;
+    text-transform: capitalize;
+}
+
+.main_header_left h1 span {
+    color: var(--main-color);
+}
+
+.main_header_left a button,
+.about-us-left a button {
+    border: none;
+    padding: 1.3rem 2rem;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: 'Monstserrat',sans-serif;
+    letter-spacing: 1px;
+}
+
+.main_header_left a button:hover {
+    transform: scale(0.98);
+}
+
+
+.main_header_right,
+.about-us-right {
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* about us  */
+
+.about-us {
+    background-color: #F8F8F8;
+}
+
+.about-us-left h1 {
+    font-size: 5rem;
+    color: var(--main-bg);
+    margin-bottom: 4rem;
+}
+
+.about-us-left p {
+    font-size: 1.6rem;
+    color: var(--main-bg);
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    line-height: 3rem;
+    margin-bottom: 6rem;
+}
+
+
+/* error page */
+.error-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Weather Page */
+
+/* .weather-content .main-content{
+    margin-block: 4rem;
+} */
+
+.temp-form{
+    width: 70%;
+    margin: 5rem auto;
+    position: relative;
+}
+
+
+input[type="text"]{
+    width: 100%;
+    padding: 1.3rem 1.5rem;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: #1e202b;
+    font-size: 1.6rem;
+    color: white;
+    outline: none;
+
+}
+
+.temp-form input[type="submit"]{
+    padding: 0 3rem;
+    margin-left: 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    background-color: #009ad8;
+    color: white;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.temp-form input[type="submit"]:hover{
+    background-color: white;
+    color: var(--main-bg);
+}
+
+::placeholder{
+color: #bfc1c8;
+}
+
+.tempInformation{
+    width: 50rem;
+    margin: auto;
+    min-height: 30rem;
+    background-color: #323544;;
+    border-radius: 1rem;
+    font-family: "Roboto",sans-serif;
+    color: white;
+    margin-top: 5rem;
+}
+
+
+.top-layer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.top-layer p{
+    flood-color: #fff;
+    font-weight: 300;
+    padding: 2rem;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.main-layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-layer #citylocation{
+    padding: 2rem;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.main-layer .middle-layer{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 2rem;
+
+}
+
+.main-layer .middle-layer p,
+.main-layer .middle-layer .fa{
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.fa{
+    color: #009ad8;
+}
+
+sup{
+    font-size: 4rem;
+    margin-top: -2rem;
+}
+
+.data-hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+/* error page */
+
+
+.error-img img{
+    width: 60rem;
+    height: 30rem;
+}
+
+
+
+/* footer  */
+
+footer {
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+    /* height: 10rem; */
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    /* line-height: 5rem; */
+    padding-block: 2rem;
+}
+
+
+/* media query */
+
+@media screen and (max-width:768px) {
+
+    .main_header .content,
+    .about-us .content
+     {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main_header_left,
+    .about-us-left{
+        height: auto;
+        margin: 5rem 0 !important;
+    }
+
+
+    .main_header_left h1 {
+        font-size: 3.5rem;
+    }
+
+    .main_header_left p {
+        font-size: 1.8rem;
+    }
+
+    .main_header_left a button {
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .main_header_right,
+    .about-us-right{
+        height: auto;
+        margin-top: 5rem !important;
+    }
+
+    .about-us-left p{
+        padding: 0 1.5rem;
+    }
+    .about-us-left h1{
+        text-align: center;
+        width: 100%;
+    }
+ 
+    .about-us-left a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-decoration: none;
+    } 
+
+    .temp-form{
+        width: auto;
+    }
+
+    .tempInformation{
+        width: auto;
+        margin-bottom: 5rem;
+    }
+
+    .main-layer .middle-layer p,
+    .main-layer .middle-layer .fa{
+    font-size: 4rem;
+    }
+
+   .main-layer #citylocation{
+      font-size: 2.5rem;
+   }
+
+}
