@@ -315,6 +315,10 @@ footer p {
 
 @media screen and (max-width:768px) {
 
+    .navbar{
+        padding-block: 3rem;
+    }
+    
     .main_header .content,
     .about-us .content
      {
