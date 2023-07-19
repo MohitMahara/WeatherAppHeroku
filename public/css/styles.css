@@ -29,13 +29,18 @@ html {
 .navbar {
     color: #fff;
     background-color: var(--main-bg);
-    padding-block: 2rem;
+    padding-block: 1.5rem !important;
 }
 
 .navbar a{
     color: #fff;
     font-size: 1.8rem;
 }
+
+a.navbar-brand{
+    font-size: 2rem;
+}
+
 
 a.navbar-brand:focus{
     color: #fff;
@@ -316,9 +321,9 @@ footer p {
 @media screen and (max-width:768px) {
 
     .navbar{
-        padding-block: 3rem;
+      padding-block: 1rem !important;
     }
-    
+
     .main_header .content,
     .about-us .content
      {
