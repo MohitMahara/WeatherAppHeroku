@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const hbs = require("hbs");
 const app = express();
-const port = 8000;
+const PORT = process.env.PORT ||8000;
 const staticPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname , "../templates/views");
 const partialsPath = path.join(__dirname , "../templates/partials");
@@ -33,6 +33,6 @@ app.get("*" , (req, res) =>{
 });
 
 
-app.listen( port , () =>{
-    console.log(`listening to the port at ${port}`)
+app.listen(PORT , () =>{
+    console.log(`listening to the port at ${PORT}`)
 })
