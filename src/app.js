@@ -31,7 +31,7 @@ app.get("/weather", (req, res) =>{
 app.get("*" , (req, res) =>{
   res.render('404error');
 });
-
+    
 
 app.listen(PORT , () =>{
     console.log(`listening to the port at ${PORT}`)
